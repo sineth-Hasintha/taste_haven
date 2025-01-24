@@ -1,0 +1,62 @@
+# Ignore Composer dependencies
+/vendor/
+
+# Ignore environment files (e.g., .env)
+.env
+.env.*
+
+# Ignore IDE-specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+logs/
+
+# Ignore cache files
+cache/
+*.cache
+
+# Ignore uploaded media or user-generated content
+/uploads/
+/storage/
+
+# Ignore Composer lock file (optional, but recommended for libraries)
+/composer.lock
+
+# Ignore npm dependencies (if you're using Node.js alongside PHP)
+/node_modules/
+
+# Ignore build artifacts
+/build/
+/dist/
+
+# Ignore local development configurations
+/config/local.php
+/config/dev.php
+
+# Ignore PHPUnit cache
+.phpunit.result.cache
+
+# Ignore PHPStorm project files
+.idea/
+
+# Ignore macOS specific files
+.DS_Store
+
+# Ignore Windows specific files
+Thumbs.db
+
+# Ignore testing environment files
+/tests/_output/
+/tests/_support/_generated/
+
+# Ignore local development server files
+.phpunit.result.cache
+.php_cs.cache

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Taste Haven - Checkout</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="checkout.html">Checkout</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Checkout</h1>
+        
+        <form>
+            <section>
+                <h2>Delivery Address</h2>
+                <input type="text" placeholder="Street Address">
+                <input type="text" placeholder="City">
+                <input type="text" placeholder="Postal Code">
+            </section>
+
+            <section>
+                <h2>Contact Information</h2>
+                <input type="tel" placeholder="Phone Number">
+            </section>
+
+            <section>
+                <h2>Delivery Preferences</h2>
+                <label>
+                    <input type="radio" name="delivery"> Delivery
+                </label>
+                <label>
+                    <input type="radio" name="delivery"> Pickup
+                </label>
+            </section>
+
+            <section>
+                <h2>Payment Method</h2>
+                <label>
+                    <input type="radio" name="payment"> Credit Card
+                </label>
+                <label>
+                    <input type="radio" name="payment"> PayPal
+                </label>
+                <label>
+                    <input type="radio" name="payment"> Cash on Delivery
+                </label>
+            </section>
+
+            <section>
+                <h2>Order Summary</h2>
+                <div>
+                    <span>Item 1</span>
+                    <span>$12.99</span>
+                </div>
+                <div>
+                    <span>Total</span>
+                    <span>$12.99</span>
+                </div>
+            </section>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </main>
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
+</body>
+</html>
