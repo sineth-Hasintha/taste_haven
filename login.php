@@ -1,12 +1,14 @@
 <?php
-include 'basic.php';
+
+include "basic.php"
+ 
 
 ?>
 
     <main class="container mx-auto px-4 py-16">
         <section class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg">
             <h2 class="text-3xl font-bold mb-8 text-red-700 text-center">Login</h2>
-            <form action="login_process.php" method="POST">
+            <form action="php/login_process.php" method="POST">
                 <div class="mb-6">
                     <label for="email" class="block text-gray-700 mb-2">Email</label>
                     <input type="email" id="email" name="email" placeholder="Enter your email" 

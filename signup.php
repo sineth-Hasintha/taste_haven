@@ -36,7 +36,7 @@
     <main class="container mx-auto px-4 py-16">
         <section class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg">
             <h2 class="text-3xl font-bold mb-8 text-red-700 text-center">Sign Up</h2>
-            <form action="signup_process.php" method="POST">
+            <form action="php/signup_process.php" method="POST">
                 <div class="mb-6">
                     <label for="name" class="block text-gray-700 mb-2">Full Name</label>
                     <input type="text" id="name" name="name" placeholder="Enter your full name" 

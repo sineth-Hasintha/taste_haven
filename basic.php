@@ -1,4 +1,10 @@
 <?php
+
+session_start();
+
+$loggedIn = isset($_SESSION['username']);
+$userId = $_SESSION['user_id'];
+
 ?>
 
 
@@ -25,12 +31,21 @@
                 </nav>
             </div>
             <div class="flex items-center space-x-4">
-                <button class="bg-red-500 text-white px-4 py-2 rounded-full hover:bg-red-600 transition">
-                    Order Now
-                </button>
-                <a href="signup.php" class="text-gray-600 hover:text-red-500 transition">
-                    Sign Up
-                </a>
+                <?php if ($loggedIn): ?>
+                    <!-- Display user information -->
+                    <span class="text-gray-600">Hello, <?php echo htmlspecialchars($_SESSION['username']); ?>!</span>
+                    <a href="logout.php" class="bg-red-500 text-white px-4 py-2 rounded-full hover:bg-red-600 transition">
+                        Logout
+                    </a>
+                <?php else: ?>
+                    <!-- Default links for non-logged-in users -->
+                    <a href="signup.php" class="text-gray-600 hover:text-red-500 transition">
+                        Sign Up
+                    </a>
+                    <a href="login.php" class="bg-red-500 text-white px-4 py-2 rounded-full hover:bg-red-600 transition">
+                        Login
+                    </a>
+                <?php endif; ?>
             </div>
         </div>
     </header>
